@@ -1,0 +1,35 @@
+div.awesomplete  {
+	display: inline;
+}
+
+.awesomplete ul {
+	border-radius: 2px;	
+}
+
+.awesomplete > ul > li {
+	font-size: 13px;
+	color: #002b5a;
+	width: 15rem;
+	height: 2rem;
+	border-bottom: 1px solid #ddd;
+}
+
+div.awesomplete > ul > li:hover {
+	background: hsl(200, 60%, 90%);
+	color: black;
+}
+
+div.awesomplete mark {
+	background: none;
+	padding: 0;
+	font-weight: 700;
+}
+
+div.awesomplete li:hover mark {
+	background: none;
+}
+
+div.awesomplete > ul > li[aria-selected="true"] {
+	background: hsl(205, 40%, 40%);
+	color: white;
+}

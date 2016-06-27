@@ -1,0 +1,82 @@
+.banner {
+	position: relative;
+
+	.image {
+		background-image: url('../assets/images/banner.jpg');
+		background-position: top center;
+		background-size: cover;	
+	}
+
+	.connect {
+		position: absolute;
+		bottom: 10%;
+		right: 5%;
+		opacity: .8;
+
+		span {
+			color: #fff;
+			margin-right: 1rem;
+		}
+
+		%icon {
+			display: inline-block;
+			height: 25px;
+			width: 25px;
+			margin-right: 3px;
+			background-size: 25px 25px;
+			background-repeat: no-repeat;
+		}
+		
+		.facebook {
+			@extend %icon;
+			background-image: url('../assets/images/fb.png');
+		}
+
+		.twitter {
+			@extend %icon;
+			background-image: url('../assets/images/twitter.png');
+		}
+
+		.pinterest {
+			@extend %icon;
+			background-image: url('../assets/images/pinterest.png');
+		}
+
+		.blog {
+			@extend %icon;
+			background-image: url('../assets/images/blog.png');
+		}
+
+		.email {
+			@extend %icon;
+			background-image: url('../assets/images/email.png');
+		}
+
+	}
+
+	@include media-breakpoint-up(xs) {
+		.image {
+			height: 15rem;
+		}
+
+		.connect {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		.image {
+			height: 24rem;
+		}
+
+		.connect {
+			display: block;
+		}
+	}
+	
+	@include media-breakpoint-up(md) {
+		.image {
+			height: 25rem;
+		}
+	}
+}

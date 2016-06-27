@@ -1,0 +1,101 @@
+.product-detail {
+
+	.modal-content {
+		padding: 2rem;
+	}
+
+	h4 {
+		color: #002b5a;
+		font-size: 24px;
+	}
+
+	h5 {
+		color: #4987ca;
+		font-size: 19px;
+	}
+
+	p {
+		color: #666666;
+		font-size: 13px;
+	}
+
+	.image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.btn {
+		background-color: #002b5a;
+		color: #ffffff;
+		font-size: 14px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff;
+		margin-bottom: 1rem;
+		height: 2.5rem;
+	}
+
+	.link-image {
+		padding-top: .5rem;
+		margin-left: .5rem;
+		display: inline-block;
+		height: 1em;
+		width: 1rem;
+		background-position: bottom center;
+		background-size: 45%;
+		background-repeat: no-repeat;
+		background-image: url('../assets/images/arrow-btn-white.png');
+	}
+
+	%bullet-sprite {
+		width: 20px;
+		height: 20px;
+		margin-right: 1rem;
+		background-image: url('../assets/images/1-6-bullet-sprite.png');
+		position: absolute;
+		transition: all .35s ease;
+	}
+
+	.bullet-hover {
+		opacity: .9;
+		transform: scale(1.5);
+	}
+
+	.bullet1 {
+		@extend %bullet-sprite;		
+		background-position: -30px -22px;
+	}
+
+	.bullet2 {
+		@extend %bullet-sprite;		
+		background-position: -30px -66px;
+	}
+
+	.bullet3 {
+		@extend %bullet-sprite;		
+		background-position: -30px -110px;
+	}
+
+	.features {
+		margin-left: .5rem;
+
+		.feature {
+			margin-bottom: 1.5rem;
+			
+			span {
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(xs) {
+		.btn {
+			width: 100%;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		.btn {
+			width: 8rem;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tagrem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "prod": "gulp build"
+  },
+  "author": "Joshua N. Cox <joshua.n.cox@gmail.com> (http://jonoco.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "6.9.0",
+    "bootstrap": "4.0.0-alpha.2",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-babel": "6.1.2",
+    "gulp-concat": "2.6.0",
+    "gulp-jade": "1.1.0",
+    "gulp-minify-css": "1.2.4",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.2",
+    "gulp-uglify": "1.5.4",
+    "gulp-util": "3.0.7",
+    "gulp-webserver": "0.9.1",
+    "jade": "1.11.0",
+    "node-sass": "3.8.0"
+  }
+}

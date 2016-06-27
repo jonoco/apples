@@ -1,0 +1,11 @@
+%section {
+	@include media-breakpoint-up(xs) {
+		width: 95%;
+		margin-bottom: .5rem;
+		padding: 2.2rem 1.5rem 1.2rem;
+	}
+	
+	@include media-breakpoint-up(md) {
+		max-width: 60rem;
+	}
+}

@@ -1,0 +1,23 @@
+.headline {
+	@extend %section;
+	color: #333;
+	font-family: 'Lato';
+	font-size: 18px;
+	margin-top: 2rem;
+
+	@include media-breakpoint-up(xs) {
+		h1 {
+			text-align: center;	
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		h1 {
+			text-align: left;
+		}
+	}
+	
+	@include media-breakpoint-up(md) {
+		max-width: 60rem;
+	}
+}
