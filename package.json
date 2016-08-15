@@ -1,11 +1,11 @@
 {
-  "name": "tagrem",
+  "name": "apples",
   "version": "1.0.0",
-  "description": "",
+  "description": "A responsive-adaptive apples site",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "prod": "gulp build"
+    "build": "gulp build"
   },
   "author": "Joshua N. Cox <joshua.n.cox@gmail.com> (http://jonoco.me/)",
   "license": "MIT",

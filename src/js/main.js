@@ -4,6 +4,7 @@ $('.searchbar>input').on('awesomplete-selectcomplete', e => {
 	const modal = $('#search-detail');
 
 	modal.find('.modal-title').text(value);
+	modal.find('.state').text(value);
 
 	modal.modal();
 })
@@ -16,6 +17,9 @@ $('.product').on('click', e => {
 	
 	modal.find('.modal-title').text(product.title);
 	modal.find('.modal-subtitle').text(product.subtitle);
+	modal.find('#feature1').text(product.features[0]);
+	modal.find('#feature2').text(product.features[1]);
+	modal.find('#feature3').text(product.features[2]);
 	modal.find('.text').html(product.desc);
 	modal.find('.image>img').attr('src', product.image);
 	
@@ -80,41 +84,73 @@ const products = {
 	1: {
 	    id: 1,
 	    order: 1,
-	    title: 'Product Title 1',
-	    subtitle: 'Staring at $500',
-	    price: 500,
-	    desc: 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-	    image: '/dist/assets/images/cereal_b.jpg',
-	    bullets: [ ['31%', '47%'], ['73%', '60%'], ['49%', '81%'] ]
+	    title: 'Elevated Apples',
+	    subtitle: 'Starting at $4.49',
+	    price: 4.49,
+	    desc: `These apples have been carefully adjusted by our apple experts to extend their distance 
+	    from the ground. Books are occasionally applied to increase the mental nutritional content available.
+	    `,
+	    image: 'dist/assets/images/apples_book.jpg',
+	    bullets: [ ['31%', '47%'], ['73%', '60%'], ['49%', '81%'] ],
+	    features: [
+				'Heightened apple elevation',
+				'Calming atmosphere',
+				'Cutting-edge elevation apparatus'
+	    ]
 	},
 	2: {
 	    id: 2,
 	    order: 2,
-	    title: 'Product Title 2',
-	    subtitle: 'Staring at $1900',
-	    price: 1900,
-	    desc: 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-	    image: '/dist/assets/images/flower_b.jpg',
-	    bullets: [ ['43%', '32%'], ['73%', '62%'], ['29%', '78%'] ]
+	    title: 'Gang Apples',
+	    subtitle: 'Starting at $7.99',
+	    price: 7.99,
+	    desc: `Although they may appear menacing at first, these expertly trained apples have been coached by 
+	    some of the finest stage directors in the world to perfect their acting skills. 
+	    <br /> <br />
+	    Not only are they trained in ballet, modern jazz, and ballroom dance techniques, these apples possess 
+	    extensive knowledge of method acting exercises.
+	    `,
+	    image: 'dist/assets/images/apples_bunch.jpg',
+	    bullets: [ ['43%', '32%'], ['73%', '62%'], ['29%', '78%'] ],
+	    features: [
+				'Shined and polished by professional apple rubbers',
+				'Exceptional physique',
+				'Willingness to self-sacrifice to aid a superior apple'
+	    ]
 	},
 	3: {
 	    id: 3,
 	    order: 3,
-	    title: 'Product Title 3',
-	    subtitle: 'Staring at $2730',
-	    price: 2730,
-	    desc: 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-	    image: '/dist/assets/images/machine_b.jpg',
-	    bullets: [ ['48%', '48%'], ['9%', '28%'], ['25%', '31%'] ]   
+	    title: 'Tree Apples',
+	    subtitle: 'Starting at $2.49',
+	    price: 2.49,
+	    desc: `Often mistaken for angels, this patented apple variety has been engineered to grow from certain 
+	    species of trees. They possesses not only the highly desirable qualities of appleness and roundness, 
+	    but also other exotic and much sought-after properties, such as upness, highness, and in-the-airness.
+	    `,
+	    image: 'dist/assets/images/apples_tree.jpg',
+	    bullets: [ ['38%', '34%'], ['9%', '28%'], ['64%', '25%'] ],
+	    features: [
+				'Angelic roundness and appleness',
+				'Superior air-bred qualities',
+				'Tree-based apple production facility'
+	    ]   
 	},
 	4: {
 	    id: 4,
 	    order: 4,
-	    title: 'Product Title 4',
-	    subtitle: 'Staring at $731',
-	    price: 731,
-	    desc: 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
-	    image: '/dist/assets/images/candy_b.jpg',
-	    bullets: [ ['40%','50%'], ['71%', '19%'], ['75%', '64%'] ]
+	    title: 'Solitary Apples',
+	    subtitle: 'Starting at $1.99',
+	    price: 1.99,
+	    desc: `Apples can actually feel emotions just like animals. Right now, this apple is feeling very 
+	    self-conscious about its appearance after a recent breakup of a long-term relationship.
+	    `,
+	    image: 'dist/assets/images/apples_green.jpg',
+	    bullets: [ ['40%','50%'], ['71%', '19%'], ['52%', '74%'] ],
+	    features: [
+				'Docile and well mannered',
+				'Raised in complete isolation',
+				'Unattractive shadows ensure self-doubt'
+	    ]
 	}
-}
+};

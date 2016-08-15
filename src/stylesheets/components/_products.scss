@@ -1,6 +1,5 @@
 .products {
 	@extend %section;
-
 	background-color: rgb(242, 242, 242);
 
 	h1 {
@@ -63,7 +62,7 @@
 
 	@include media-breakpoint-up(xs) {
 		p {
-			height: 2rem;
+			height: 2.3rem;
 		}
 
 		.image {
@@ -84,7 +83,7 @@
 
 	@include media-breakpoint-up(sm) {
 		p {
-			height: 2rem;
+			height: 2.5rem;
 		}
 
 		.image {

@@ -2,9 +2,22 @@
 	position: relative;
 
 	.image {
-		background-image: url('../assets/images/banner.jpg');
+		background-image: url('../assets/images/apples_red.jpg');
 		background-position: top center;
 		background-size: cover;	
+	}
+
+	.title {
+		position: absolute;
+		top: 40%;
+		width: 100%;
+		z-index: 10;
+
+		h1 {
+			color: #fff;
+			font-size: 5rem;
+			text-align: center;
+		}
 	}
 
 	.connect {
@@ -55,6 +68,10 @@
 	}
 
 	@include media-breakpoint-up(xs) {
+		.title {
+			top: 10%;
+		}
+
 		.image {
 			height: 15rem;
 		}
@@ -65,6 +82,10 @@
 	}
 
 	@include media-breakpoint-up(sm) {
+		.title {
+			top: 20%;
+		}
+
 		.image {
 			height: 24rem;
 		}
@@ -75,6 +96,10 @@
 	}
 	
 	@include media-breakpoint-up(md) {
+		.title {
+			top: 40%;
+		}
+
 		.image {
 			height: 25rem;
 		}
