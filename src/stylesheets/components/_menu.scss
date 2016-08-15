@@ -1,10 +1,10 @@
 .menu {
 	@extend %section;
-	background-image: url('../assets/images/apples_bowl.jpg');
-	background-color: rgba(255, 255, 255, 0.9);
-	background-blend-mode: color;
-	background-position: top center;
-	background-size: 100%;	
+	// background-image: url('../assets/images/apples_bowl.jpg');
+	background-color: rgba(242, 242, 242, 1);
+	// background-blend-mode: color;
+	// background-position: top center;
+	// background-size: 100%;	
 
 	p {
 		font-size: 12px;
