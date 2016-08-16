@@ -1,0 +1,9 @@
+.carousel {
+	@extend %section;
+
+	.item {
+		img {
+			width: 100%;
+		}
+	}
+}
