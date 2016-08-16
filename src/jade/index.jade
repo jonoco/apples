@@ -5,6 +5,7 @@ html(lang='en')
 		meta(name='viewport' content='width=device-width, user-scalable=no')
 		link(href='dist/css/main.css' rel='stylesheet')
 
+
 		title Hungry For Apples?
 	body
 	
@@ -13,6 +14,9 @@ html(lang='en')
 
 		// exposition area w/ searchbox
 		include _headline.jade
+
+		// carousel
+		include _carousel.jade
 
 		// 'learn more' links
 		include _menu.jade
@@ -24,6 +28,7 @@ html(lang='en')
 		include _footer.jade
 
 		script(src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous")
+		script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" type="text/javascript")
 		script(src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js")
 		script(src='dist/js/main.js' type='text/javascript')
 		script(src='dist/js/awesomplete.min.js' type='text/javascript')

@@ -1,3 +1,14 @@
+// initialize
+$(document).ready( () => {
+
+	// init carousel
+	$('.spinner').slick({
+		autoplay: true,
+		dots: true,
+		arrows: true
+	});
+});
+
 // present searchbar modal
 $('.searchbar>input').on('awesomplete-selectcomplete', e => {
 	const value = e.target.value;

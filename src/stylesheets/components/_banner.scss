@@ -24,11 +24,11 @@
 		position: absolute;
 		bottom: 10%;
 		right: 5%;
-		opacity: .8;
 
 		span {
 			color: #fff;
 			margin-right: 1rem;
+			opacity: .8;
 		}
 
 		%icon {
@@ -38,6 +38,11 @@
 			margin-right: 3px;
 			background-size: 25px 25px;
 			background-repeat: no-repeat;
+			opacity: .8;
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
 		}
 		
 		.facebook {
