@@ -47,6 +47,9 @@
 	.product {
 		background-color: #fff;
 		padding: 1rem;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	.filter {
