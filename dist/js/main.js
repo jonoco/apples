@@ -30,6 +30,8 @@ $('.product').on('click', function (e) {
 	var product = products[index];
 	var modal = $('#product-detail');
 
+	console.log(modal);
+
 	modal.find('.modal-title').text(product.title);
 	modal.find('.modal-subtitle').text(product.subtitle);
 	modal.find('#feature1').text(product.features[0]);
@@ -49,12 +51,10 @@ $('.product').on('click', function (e) {
 $('.filter>select').on('change', function (e) {
 	var select = $(e.currentTarget);
 
-	var _select$find$val$spli = select.find('option:selected').val().split('-');
-
-	var _select$find$val$spli2 = _slicedToArray(_select$find$val$spli, 2);
-
-	var min = _select$find$val$spli2[0];
-	var max = _select$find$val$spli2[1];
+	var _select$find$val$spli = select.find('option:selected').val().split('-'),
+	    _select$find$val$spli2 = _slicedToArray(_select$find$val$spli, 2),
+	    min = _select$find$val$spli2[0],
+	    max = _select$find$val$spli2[1];
 
 	showProductRange(min, max);
 });

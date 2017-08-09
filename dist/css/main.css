@@ -546,7 +546,6 @@ mark,
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1400,9 +1399,6 @@ pre {
   .form-control::-webkit-input-placeholder {
     color: #999;
     opacity: 1; }
-  .form-control::-moz-placeholder {
-    color: #999;
-    opacity: 1; }
   .form-control:-ms-input-placeholder {
     color: #999;
     opacity: 1; }
@@ -2051,7 +2047,6 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .15s linear;
   transition: opacity .15s linear; }
   .fade.in {
     opacity: 1; }
@@ -2065,11 +2060,8 @@ input[type="button"].btn-block {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-          transition-duration: .35s;
-  -webkit-transition-property: height;
+  transition-timing-function: ease;
+  transition-duration: .35s;
   transition-property: height; }
 
 .dropup,
@@ -3009,10 +3001,8 @@ input[type="button"].btn-block {
 @media (min-width: 544px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem; }
     .card-columns .card {
       display: inline-block;
@@ -3344,7 +3334,6 @@ a.label:focus, a.label:hover {
     border-bottom-right-radius: 0.25rem; } }
 
 .progress-striped[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem; }
 
@@ -3354,7 +3343,6 @@ a.label:focus, a.label:hover {
 
 @media screen and (min-width: 0\0) {
   .progress-bar-striped {
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem; } }
 
@@ -3690,7 +3678,6 @@ button.close {
   outline: 0;
   -webkit-overflow-scrolling: touch; }
   .modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform .3s ease-out;
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
@@ -4287,7 +4274,6 @@ div.awesomplete > ul {
   border-radius: .3em;
   margin: .2em 0 0;
   background: rgba(255, 255, 255, 0.9);
-  background: -webkit-linear-gradient(top left, white, rgba(255, 255, 255, 0.8));
   background: linear-gradient(to bottom right, white, rgba(255, 255, 255, 0.8));
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0.05em 0.2em 0.6em rgba(0, 0, 0, 0.2);
@@ -4299,7 +4285,6 @@ div.awesomplete > ul:empty {
 
 @supports ((-webkit-transform: scale(0)) or (transform: scale(0))) {
   div.awesomplete > ul {
-    -webkit-transition: 0.3s cubic-bezier(0.4, 0.2, 0.5, 1.4);
     transition: 0.3s cubic-bezier(0.4, 0.2, 0.5, 1.4);
     -webkit-transform-origin: 1.43em -.43em;
             transform-origin: 1.43em -.43em; }
@@ -4309,8 +4294,7 @@ div.awesomplete > ul:empty {
     -webkit-transform: scale(0);
             transform: scale(0);
     display: block;
-    -webkit-transition-timing-function: ease;
-            transition-timing-function: ease; } }
+    transition-timing-function: ease; } }
 
 /* Pointer */
 div.awesomplete > ul:before {
@@ -4883,7 +4867,6 @@ h3 {
   margin-right: 1rem;
   background-image: url("../assets/images/1-6-bullet-sprite.png");
   position: absolute;
-  -webkit-transition: all .35s ease;
   transition: all .35s ease; }
 
 .product-detail .bullet-hover {

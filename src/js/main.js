@@ -25,6 +25,8 @@ $('.product').on('click', e => {
 	const index = e.currentTarget.dataset.product;
 	const product = products[index];
 	const modal = $('#product-detail');
+
+	console.log(modal);
 	
 	modal.find('.modal-title').text(product.title);
 	modal.find('.modal-subtitle').text(product.subtitle);
